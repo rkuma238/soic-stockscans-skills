@@ -1,0 +1,24 @@
+{
+  "userSettings": {
+    "globalPermissionGrants": {
+      "allow": [
+        "read_file(/Users/rakeshkumarr/.npm/_logs/2026-08-06T10_19_07_121Z-debug-0.log)",
+        "read_file(/Users/rakeshkumarr/.cache/uv/archive-v0/zfClwVOS2XO3JiBMLAZjh/lib/python3.13/site-packages/screener_mcp/server.py)",
+        "read_file(/Users/rakeshkumarr/.cache/uv/archive-v0/zfClwVOS2XO3JiBMLAZjh/lib/python3.13/site-packages/mcp/server)",
+        "read_file(/Users/rakeshkumarr/.cache/uv/archive-v0/zfClwVOS2XO3JiBMLAZjh/lib/python3.13/site-packages)",
+        "unsandboxed(find ~ -maxdepth 5 -name \"*mcp_config*.json\" -o -name \"*screener*\" 2\u003e/dev/null)",
+        "read_file(/Users/rakeshkumarr/.gemini/config/mcp_config.json)",
+        "unsandboxed(uvx)",
+        "unsandboxed(uv)",
+        "read_file(/Users/rakeshkumarr/.gemini/antigravity-ide/mcp_config.json)",
+        "unsandboxed(head)",
+        "write_file(/Users/rakeshkumarr/.gemini/config/mcp_config.json)",
+        "write_file(/Users/rakeshkumarr/.gemini/antigravity-ide/mcp_config.json)",
+        "read_url(mcpmarket.com)",
+        "read_file(/Users/rakeshkumarr/Library/Application Support/Claude/claude_desktop_config.json)",
+        "write_file(/Users/rakeshkumarr/Library/Application Support/Claude/claude_desktop_config.json)"
+      ]
+    },
+    "remoteControlHostname": "mac-lan-rising-galaxy"
+  }
+}

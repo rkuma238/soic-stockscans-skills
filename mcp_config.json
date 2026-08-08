@@ -1,0 +1,83 @@
+{
+  "mcpServers": {
+    "concall-analysis": {
+      "args": [
+        "/Users/rakeshkumarr/analyse_financial_data/concall_analysis_mcp.py"
+      ],
+      "command": "python"
+    },
+    "filesystem": {
+      "args": [
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/rakeshkumarr/Downloads",
+        "/Users/rakeshkumarr/nifty_iv_dashboard"
+      ],
+      "command": "npx"
+    },
+    "financial-analysis": {
+      "args": [
+        "/Users/rakeshkumarr/analyse_financial_data/financial_analysis_mcp.py"
+      ],
+      "command": "python"
+    },
+    "notebooklm": {
+      "command": "notebooklm-mcp"
+    },
+    "notion": {
+      "args": [
+        "-y",
+        "@suekou/mcp-notion-server"
+      ],
+      "command": "npx",
+      "env": {
+        "NOTION_API_TOKEN": "YOUR_NOTION_API_TOKEN",
+        "NOTION_MARKDOWN_CONVERSION": "true"
+      }
+    },
+    "playwright": {
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "command": "npx"
+    },
+    "screener": {
+      "args": [
+        "--with",
+        "mcp<2.0.0",
+        "git+https://github.com/LogeshR15/screener-mcp.git"
+      ],
+      "command": "uvx"
+    },
+    "substack-analyzer": {
+      "args": [
+        "/Users/rakeshkumarr/.openclaw/pipeline/substack_mcp.py"
+      ],
+      "command": "python3"
+    },
+    "telegram": {
+      "args": [
+        "-y",
+        "@chaindead/telegram-mcp"
+      ],
+      "command": "npx",
+      "env": {
+        "TG_API_HASH": "YOUR_TG_API_HASH",
+        "TG_APP_ID": "YOUR_TG_APP_ID"
+      }
+    },
+    "tradingview": {
+      "args": [
+        "/Users/rakeshkumarr/.gemini/antigravity/scratch/tradingview-mcp/src/server.js"
+      ],
+      "command": "node"
+    },
+    "gmail": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gongrzhe/server-gmail-autoauth-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "8dcc9d64-dd2b-4f29-a746-3f48211fb7f5",
+  "name": "Lanchain",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///Users/rakeshkumarr/Documents/Lanchain",
+          "allowWrite": true
+        }
+      }
+    ]
+  },
+  "updatedAt": "2026-04-11T11:26:37.323512Z"
+}

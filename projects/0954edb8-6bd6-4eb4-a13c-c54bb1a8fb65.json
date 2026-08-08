@@ -1,0 +1,15 @@
+{
+  "id": "0954edb8-6bd6-4eb4-a13c-c54bb1a8fb65",
+  "name": "trading_angel",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///Users/rakeshkumarr/trading_angel",
+          "allowWrite": true
+        }
+      }
+    ]
+  },
+  "updatedAt": "2026-03-10T04:57:07.794398Z"
+}

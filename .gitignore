@@ -1,0 +1,11 @@
+# Security & Secret Protection
+.env
+*.pem
+*.key
+*credentials*
+*token*
+*secret*
+gcp-oauth.keys.json
+stockscans_state.json
+.gmail-mcp/
+reports/
