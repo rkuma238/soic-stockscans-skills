@@ -78,6 +78,12 @@
         "-y",
         "@gongrzhe/server-gmail-autoauth-mcp"
       ]
+    },
+    "stockscans": {
+      "command": "python3",
+      "args": [
+        "/Users/rakeshkumarr/stockscans-mcp/stockscans_mcp.py"
+      ]
     }
   }
 }
