@@ -41,6 +41,18 @@ When evaluating new quarterly results declared in the last 24 hours (from StockS
 
 ---
 
+## 0. StockScans Official Forensic Report Standards & Audit Framework (v3.5.0)
+
+All forensic audits MUST evaluate the 6 official StockScans Forensic Report Pillars:
+1. **Delayed Impairments vs KAM Flags**: Track multi-year auditor KAM warnings on subsidiary equity/loans before impairment provisions.
+2. **Subsidiary Financial Exposure & Guarantees**: Quantify total parent exposure (Equity + Preference + Unsecured Loans + Guarantees) and shareholder voting pushback (>10% against).
+3. **Database Audit Trail Compliance (Rule 11(g))**: Verify consecutive non-compliance or unverifiable POS/software database audit logs.
+4. **Customer / Aggregator Concentration**: Audit trade receivables concentrated in top 2-3 customers or aggregators (>60%).
+5. **Unrecognized Deferred Tax Assets (DTA)**: Audit unrecorded DTAs on carried-forward losses and loss expiry timelines (<5 years).
+6. **Accounting Policy Shifts & Exceptional Items**: Flag inventory valuation changes (FIFO to Weighted Average), depreciation shifts, or one-off fee waivers shaping profit.
+
+---
+
 ## 1. SOIC-Level Deep Forensic Audit (MANDATORY FOR EVERY COMPANY)
 
 Every forensic audit MUST analyze and document the following 6 deep forensic audit parameters extracted from annual report footnotes, statutory auditor reports, and Key Audit Matters (KAMs):
