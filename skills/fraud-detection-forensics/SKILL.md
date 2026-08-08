@@ -1,8 +1,8 @@
 ---
 name: fraud-detection-forensics
-description: "Forensic accounting skill: detects earnings manipulation, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, and includes a mandatory Walk The Talk Management Guidance Scorecard."
+description: "Forensic accounting skill: detects earnings manipulation, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, database audit trail non-compliance, unrecognized DTAs, and includes a mandatory Walk The Talk Management Guidance Scorecard."
 type: ATOMIC
-version: 3.2.0
+version: 3.4.0
 children: []
 inputs:
   - company_data: object
@@ -14,16 +14,52 @@ outputs:
   - auditor_report_audit: object
   - kmp_resignation_audit: object
   - writeoff_exceptional_audit: object
+  - database_audit_trail_check: object
+  - subsidiary_guarantee_exposure: object
   - fraud_risk_score: string
 ---
 
-# Fraud Detection & Forensics Analyzer (v3.3.0)
+# Fraud Detection & Forensics Analyzer (v3.4.0 — SOIC Institutional Benchmark Standard)
 
-Applies to all corporate companies, banks, and NBFCs. Implements Dr. Vijay Malik's 7-point Forensic Triangulation, **Three-Way Data Cross-Verification Accounting Fraud Triangulation**, the **Walk The Talk Guidance Scorecard**, **Auditor Report KAM Audit**, **KMP & Board Resignation Audit**, **KMP Remuneration Audit**, **Subsidiary Performance Breakdown**, **Related Party Transactions (RPT) Audit**, and **Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit**.
+Applies to all corporate companies, banks, and NBFCs. Implements Dr. Vijay Malik's 7-point Forensic Triangulation, **SOIC-Level 6-Point Deep Forensic Audit**, **Three-Way Data Cross-Verification Accounting Fraud Triangulation**, the **Walk The Talk Guidance Scorecard**, **Auditor Report KAM & Impairment Lag Audit**, **Software & Database Audit Trail Compliance Audit**, **Subsidiary Financial Exposure & Guarantee Audit**, **Trade Receivable Aggregator Concentration Audit**, **KMP & Board Resignation Audit**, **KMP Remuneration Audit**, **Related Party Transactions (RPT) Audit**, and **Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit**.
 
 ---
 
-## 0. Three-Way Data Comparison & Accounting Fraud Audit (MANDATORY FOR EVERY COMPANY)
+## 0. SOIC-Level Deep Forensic Audit (MANDATORY FOR EVERY COMPANY)
+
+Every forensic audit MUST analyze and document the following 6 deep forensic audit parameters extracted from annual report footnotes, statutory auditor reports, and Key Audit Matters (KAMs):
+
+### 1. Auditor Key Audit Matters (KAM) & Delayed Impairment Provision Audit
+- **Multi-Year KAM Tracking**: Check if investments in subsidiaries, goodwill, ROU assets, or CWIP were flagged as KAMs by statutory auditors across multiple consecutive annual reports (e.g. 2–4 years) BEFORE management recorded an impairment provision.
+- **Impairment Timing & Model Assumptions**: Identify delayed impairment provisions (e.g. ₹120 Cr provision after 4 years of auditor warnings) and verify DCF discount rates (e.g. 14%) and terminal growth rates.
+
+### 2. Subsidiary Financial Exposure, Loans & Corporate Guarantee Audit
+- **Parent Total Commitment**: Quantify parent entity's total financial commitment to loss-making subsidiaries across:
+  1. Equity Share Capital Invested (₹ Cr)
+  2. Preference Share Capital (₹ Cr)
+  3. Inter-Corporate Unsecured Loans / Advances & Interest Terms (₹ Cr)
+  4. Outstanding Corporate & Performance Guarantees (₹ Cr)
+- **Shareholder Voting Pushback**: Audit minority shareholder voting % against inter-corporate loan approvals (>10% voting against indicates shareholder governance concern).
+
+### 3. Software & Database-Level Audit Trail Compliance Check (Rule 11(g))
+- **Audit Trail Status**: Verify if statutory auditors reported non-compliance with Companies Act Rule 11(g) regarding the database-level audit trail feature in accounting software and POS systems across consecutive years (e.g. FY24, FY25, FY26 non-compliance).
+- **Tamper-Proof Audit Trail Verification**: Check if log-editing or database access was independently verifiable by auditors.
+
+### 4. Trade Receivables & Aggregator / Customer Concentration Audit
+- **Customer Concentration Ratio**: Quantify % of trade receivables concentrated in top 2–3 customers or food delivery aggregators (e.g. Zomato, Swiggy representing >60% of receivables).
+- **Impairs & Provisioning Policy**: Audit whether collective impairment allowances were created for concentrated balances.
+
+### 5. Unrecognized Deferred Tax Assets (DTA) & Loss Expiry Audit
+- **Unrecorded DTA Quantum**: Quantify unrecognized DTA on carried-forward business losses and unabsorbed depreciation for parent and operating subsidiaries (indicating lack of reasonable certainty of future taxable profits).
+- **Tax Loss Expiry Timeline**: Highlight losses expiring within 5 years.
+
+### 6. Accounting Policy Changes & Exceptional Item Abuse Audit
+- **Policy Shifts**: Detect inventory valuation method shifts (e.g. FIFO to Weighted Average), depreciation method changes, or unbilled revenue accounting shifts.
+- **Exceptional Non-Operating PAT Impact**: Audit franchisee fee waivers, labor code provisions, or one-off asset sales masking core operating losses.
+
+---
+
+## 1. Three-Way Data Comparison & Accounting Fraud Audit (MANDATORY FOR EVERY COMPANY)
 
 Cross-verify **Screener API Data** vs. **BSE/NSE Result Announcements** vs. **Audited Annual Report Disclosures** to identify accounting fraud signals:
 
@@ -39,9 +75,7 @@ Cross-verify **Screener API Data** vs. **BSE/NSE Result Announcements** vs. **Au
 
 ---
 
-## 1. Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit Table (MANDATORY FOR EVERY COMPANY)
-
-Evaluate bad debt write-offs, technical write-offs, non-recurring exceptional items, and unclaimed trade payable write-backs:
+## 2. Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit Table
 
 | Item Category | Extracted Financial / Footnote Details | Value (₹ Cr) | % of Net Profit / Sales | Forensic Risk Rating & Audit Verdict |
 | :--- | :--- | :---: | :---: | :---: |
@@ -50,40 +84,9 @@ Evaluate bad debt write-offs, technical write-offs, non-recurring exceptional it
 | **Exceptional / One-off Gains/Losses**| Non-recurring gains, merger restructuring, tax one-offs | `{Exc_Val}` | `{Exc_PAT_%}%` | 🟢 **PAR** / 🟡 **NON-OPERATIONAL PAT KICKER** |
 | **Unclaimed Bills & Payable Write-backs**| Write-back of unclaimed liabilities & trade payables (>3Y) | `{WB_Val}` | `{WB_PAT_%}%` | 🟢 **CLEAN** / 🔴 **EARNINGS INFLATION RISK** |
 
-#### Forensic Write-Off & One-Off Rules:
-- 🔴 **HIGH FORENSIC RED FLAG**: Core PAT growth driven primarily by write-back of unclaimed trade payables, unbilled revenue write-downs $>5\%$ of Sales, or persistent unrecorded bad debt write-offs.
-- 🟢 **CLEAN / LOW RISK**: Technical write-offs fully covered by existing provisions, zero earnings reliance on trade payable write-backs.
-
 ---
 
-## 2. KMP & Board Resignation Audit Table
-Audit CFO, CEO, CRO, Company Secretary, and Independent Director resignations over past 3-5 years.
-
----
-
-## 3. Auditor's Report & Governance Audit Table
-Statutory Auditor Name, Audit Firm Tier (Big 4 check), Audit Opinion (`UNQUALIFIED` / `QUALIFIED`), Key Audit Matters (KAMs).
-
----
-
-## 4. KMP Remuneration & Executive Compensation Alignment Audit Table (MANDATORY RATIONALE)
-
-Every analysis MUST explicitly justify **WHY** KMP compensation is rated `GREEN`, `AMBER`, or `RED`:
-
-| KMP Name & Designation | Total Remuneration (₹ Cr) | Remuneration % of Sales / PAT / EBITDA | YoY Pay Growth vs Employee Cost Growth | SEBI Section 197 & Peer Benchmark | Forensic Rating | Explicit Justification & Rationale for Rating |
-| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **MD / CEO** | `{CEO_Pay}` | `{CEO_PAT_%}%` | `{Pay_vs_EmpCost}` | `{Peer_Benchmark}` | 🟢 **GREEN** / 🔴 **RED** | **MANDATORY EXPLICIT WHY RATIONALE**: Explain why pay is aligned or inflated. |
-
-#### KMP Remuneration Forensic Rating Rules:
-- 🟢 **GREEN (LOW RISK)**: CEO pay $< 2\%$ of Net Profit ($< 0.5\%$ of Sales for loss-making growth companies), pay growth $\le$ employee cost growth, compliant with SEBI Section 197 ceiling or RBI Section 35B approval, zero unapproved profit commissions.
-- 🟡 **AMBER (MODERATE RISK)**: CEO pay $2\% - 5\%$ of Net Profit, pay growth significantly outstripping employee salary growth ($>15\%$ divergence).
-- 🔴 **RED (HIGH RISK)**: CEO pay $> 5\%$ of Net Profit, or CEO pay increasing $>20\%$ during a year when Net Profit / EBITDA declined $>20\%$, or unapproved related party managerial payouts.
-
----
-
-## 5. Dr. Vijay Malik 7-Point Fraud Risk Scorecard Breakdown (MANDATORY FOR EVERY COMPANY)
-
-Calculate the final **MALIK FRAUD RISK SCORE** (`GREEN (LOW RISK)`, `AMBER (MODERATE RISK)`, or `RED (HIGH RISK)`) by evaluating all 7 Dr. Vijay Malik forensic tests:
+## 3. Dr. Vijay Malik 7-Point Fraud Risk Scorecard Breakdown
 
 | Malik Forensic Test # | Forensic Check Name | Benchmark & Target Criteria | Extracted Company Metric | Test Verdict | Score Weight |
 | :---: | :--- | :--- | :--- | :---: | :---: |
@@ -98,15 +101,8 @@ Calculate the final **MALIK FRAUD RISK SCORE** (`GREEN (LOW RISK)`, `AMBER (MODE
 
 ---
 
-## 6. Subsidiary & Related Party Transactions (RPT) Audit Table
+## Output Schema
+Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `soic_deep_forensic_audit`, `malik_scorecard_breakdown`, `accounting_fraud_audit`, `writeoff_exceptional_audit`, `kmp_resignation_audit`, `auditor_report_audit`, `kmp_remuneration_audit_with_rationale`, `subsidiary_rpt_audit`, and `walk_the_talk_scorecard`.
 
----
-
-## 7. The 'Walk The Talk' Management Guidance Scorecard
-
----
-
-## Output
-Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `malik_scorecard_breakdown`, `accounting_fraud_audit`, `writeoff_exceptional_audit`, `kmp_resignation_audit`, `auditor_report_audit`, `kmp_remuneration_audit_with_rationale`, `subsidiary_rpt_audit`, and `walk_the_talk_scorecard`.
 
 

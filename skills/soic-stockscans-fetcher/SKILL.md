@@ -3,7 +3,7 @@ name: soic-stockscans-fetcher
 description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them into plain-English equity research insights.
 ---
 
-# SOIC x StockScans Report Fetcher & Synthesizer
+# SOIC x StockScans Report Fetcher & Synthesizer (v3.1.0)
 
 ## Mandatory Execution Rule
 **This skill MUST be executed for every equity analysis task.** 
@@ -27,7 +27,15 @@ Before completing any equity research report or company breakdown, you MUST fetc
    - **Financial Model**: Revenue breakdown, margin trajectories, capital deployment efficiency, and historical financial metrics.
    - **Deep Dive Report**: In-depth competitive moats and strategic positioning.
 
-3. **Synthesis & Plain-English Output Requirement**:
-   Always incorporate the extracted SOIC StockScans findings into the final equity research report under a dedicated section titled:
+3. **Mandatory Exhaustive Synthesis Output Requirements (Section 18)**:
+   Always incorporate the extracted SOIC StockScans findings into the final equity research report under a dedicated, highly detailed section titled:
    `### SOIC x StockScans Intelligence & Synthesis`
-   Translating complex financial jargon into clear, actionable, simple plain English for investors.
+   
+   Section 18 MUST include the following 6 detailed subsections:
+   - **18.1 Business Overview & Segment Deep-Dive**: Exhaustive breakdown of core business segments, menu ladders, brand licensing terms, and operational engines.
+   - **18.2 Growth Catalysts & Forward Triggers**: Detailed analysis of capacity expansions, capital infusions, margin drivers, and operational tailwinds.
+   - **18.3 Management Guidance vs Historical Outcomes Scorecard**: Full dated multi-item table classifying guidance into *Delivered*, *On Track*, *Pending*, and *Missed/Delayed* with exact metrics.
+   - **18.4 Forensic Audit, Accounting Quality & Dr. Vijay Malik Fraud Risk Scorecard**: Full 7-point checklist covering CFO vs Sales, CWIP ratio, Receivables, Other Income dependency, Auditor Qualifications, Promoter Pledging, and RPTs.
+   - **18.5 Financial Model & Unit Economics**: Comprehensive review of revenue drivers, store-level vs company-level EBITDA, Ind AS lease interest/depreciation impacts, and FCF roadmap.
+   - **18.6 Strategic Moats & Operational Risk Audit**: Detailed narrative on competitive moats, pricing power, and operational risk mitigation.
+
