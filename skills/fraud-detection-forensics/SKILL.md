@@ -1,17 +1,19 @@
 ---
 name: fraud-detection-forensics
-description: "Forensic accounting skill: detects earnings manipulation, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, database audit trail non-compliance, unrecognized DTAs, and includes a mandatory Walk The Talk Management Guidance Scorecard."
+description: "Forensic accounting skill: detects earnings manipulation, 24H quarterly result fraud signals, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, database audit trail non-compliance, unrecognized DTAs, and includes a mandatory Walk The Talk Management Guidance Scorecard."
 type: ATOMIC
-version: 3.4.0
+version: 3.5.0
 children: []
 inputs:
   - company_data: object
+  - quarterly_result_24h: object
   - annual_report_disclosures: object
   - periods: string[]
 outputs:
   - forensic_flags: object[]
   - walk_the_talk_scorecard: object
   - auditor_report_audit: object
+  - quarterly_result_triangulation: object
   - kmp_resignation_audit: object
   - writeoff_exceptional_audit: object
   - database_audit_trail_check: object
@@ -19,13 +21,27 @@ outputs:
   - fraud_risk_score: string
 ---
 
-# Fraud Detection & Forensics Analyzer (v3.4.0 — SOIC Institutional Benchmark Standard)
+# Fraud Detection & Forensics Analyzer (v3.5.0 — SOIC & 24H Result Audit Benchmark)
 
-Applies to all corporate companies, banks, and NBFCs. Implements Dr. Vijay Malik's 7-point Forensic Triangulation, **SOIC-Level 6-Point Deep Forensic Audit**, **Three-Way Data Cross-Verification Accounting Fraud Triangulation**, the **Walk The Talk Guidance Scorecard**, **Auditor Report KAM & Impairment Lag Audit**, **Software & Database Audit Trail Compliance Audit**, **Subsidiary Financial Exposure & Guarantee Audit**, **Trade Receivable Aggregator Concentration Audit**, **KMP & Board Resignation Audit**, **KMP Remuneration Audit**, **Related Party Transactions (RPT) Audit**, and **Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit**.
+Applies to all corporate companies, banks, and NBFCs. Implements **24-Hour Quarterly Result Fraud Triangulation**, Dr. Vijay Malik's 7-point Forensic Triangulation, **SOIC-Level 6-Point Deep Forensic Audit**, **Three-Way Data Cross-Verification Accounting Fraud Triangulation**, the **Walk The Talk Guidance Scorecard**, **Auditor Report KAM & Impairment Lag Audit**, **Software & Database Audit Trail Compliance Audit**, **Subsidiary Financial Exposure & Guarantee Audit**, **Trade Receivable Aggregator Concentration Audit**, **KMP & Board Resignation Audit**, **KMP Remuneration Audit**, **Related Party Transactions (RPT) Audit**, and **Write-Offs, Exceptional One-Offs & Unclaimed Liabilities Audit**.
 
 ---
 
-## 0. SOIC-Level Deep Forensic Audit (MANDATORY FOR EVERY COMPANY)
+## 0. 24-Hour Quarterly Result Fraud Triangulation Rules (NEW v3.5.0)
+
+When evaluating new quarterly results declared in the last 24 hours (from StockScans `result-scans`), automatically apply these 5 automated red flag checks:
+
+| Result Fraud Test | Quantitative Trigger Condition | Forensic Risk Classification | Mandatory Action / Audit Verdict |
+| :--- | :--- | :---: | :--- |
+| **1. PAT-Revenue Divergence** | Revenue YoY $\ge 15\%$ AND PAT YoY $< 0\%$ | 🔴 **HIGH RED FLAG** | Investigate interest/depreciation drag or margin compression. |
+| **2. Inventory Inflation / Profit Kicker** | Op Profit YoY $> 2.5 \times$ Revenue YoY (when Rev YoY $>10\%$) | 🟡 **AMBER WARNING** | Verify if raw material costs were capitalized into inventory. |
+| **3. Tax Expense Anomaly** | PBT $> 0$ BUT Tax Expense $\le 0$ | 🟡 **AMBER WARNING** | Check for unrecorded DTA reversals masking core PBT. |
+| **4. Extreme OPM Margin Expansion** | OPM $> 30\%$ (for non-financial corporates) | 🟡 **AMBER WARNING** | Verify sustainability vs one-off inventory/raw material tailwinds. |
+| **5. Receivable vs Sales Growth Divergence**| Quarterly Receivables Growth $> 2 \times$ Revenue YoY | 🔴 **HIGH RED FLAG** | Inspect uncollected revenue and aggregator concentration. |
+
+---
+
+## 1. SOIC-Level Deep Forensic Audit (MANDATORY FOR EVERY COMPANY)
 
 Every forensic audit MUST analyze and document the following 6 deep forensic audit parameters extracted from annual report footnotes, statutory auditor reports, and Key Audit Matters (KAMs):
 
@@ -56,6 +72,7 @@ Every forensic audit MUST analyze and document the following 6 deep forensic aud
 ### 6. Accounting Policy Changes & Exceptional Item Abuse Audit
 - **Policy Shifts**: Detect inventory valuation method shifts (e.g. FIFO to Weighted Average), depreciation method changes, or unbilled revenue accounting shifts.
 - **Exceptional Non-Operating PAT Impact**: Audit franchisee fee waivers, labor code provisions, or one-off asset sales masking core operating losses.
+
 
 ---
 
