@@ -121,17 +121,3 @@ Cross-verify **Screener API Data** vs. **BSE/NSE Result Announcements** vs. **Au
 ## Output Schema
 Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `soic_deep_forensic_audit`, `malik_scorecard_breakdown`, `accounting_fraud_audit`, `writeoff_exceptional_audit`, `kmp_resignation_audit`, `auditor_report_audit`, `kmp_remuneration_audit_with_rationale`, `subsidiary_rpt_audit`, and `walk_the_talk_scorecard`.
 
-
-
-
-
----
-
-## 8. Nightly 24H Result Fraud Learnings Register (Auto-Updated)
-
-| Date | Company | MCap (₹ Cr) | Fraud Pattern Detected | Quantitative Metric | Audit Action |
-| :--- | :--- | :---: | :--- | :---: | :--- |
-
-| 2026-08-08 | **Dynamatic Technologies Ltd** | ₹7,743 | 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth. | Rev: 14.5% / PAT: 93.0% | Logged in Nightly Scan |
-| 2026-08-08 | **Onida Electronics Ltd** | ₹1,411 | 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT. | Rev: 29.5% / PAT: -13.5% | Logged in Nightly Scan |
-| 2026-08-08 | **PDS Ltd** | ₹5,118 | 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth. | Rev: 14.8% / PAT: 42.7% | Logged in Nightly Scan |
