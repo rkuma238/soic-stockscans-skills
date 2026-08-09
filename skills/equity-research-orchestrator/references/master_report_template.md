@@ -25,8 +25,9 @@ graph TD
     Pipeline --> S14["14. 24H Result Fraud & Revenue Divergence Audit"]
     Pipeline --> S15["15. Tax Analysis & Deferred Tax Assets (DTA) Loss Expiry"]
     Pipeline --> S16["16. Full Shareholding Analysis Table + Reading Between Lines"]
-    Pipeline --> S17["17. Cyclicality, Seasonality & Commodity Sensitivity"]
+    Pipeline --> S17["17. Granular Seasonality & Cyclicality Audit Table + Reading Between Lines"]
     Pipeline --> S18["18. Management Guidance Track Record Table + Reading Between Lines"]
+
     Pipeline --> S19["19. SOIC 3-Year Forward Projections Grid + Reading Between Lines"]
     Pipeline --> S20["20. SOIC DCF & Valuation Multiples Table + Reading Between Lines"]
     Pipeline --> S21["21. SOIC 5-Point Intrinsic Compounding & Moat Analysis"]
