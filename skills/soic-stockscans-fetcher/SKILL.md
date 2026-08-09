@@ -1,13 +1,27 @@
 ---
 name: soic-stockscans-fetcher
-description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them into plain-English equity research insights.
+description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them including SOIC Management Guidance Track Record Analysis into plain-English equity research insights.
+version: 2.1.0
 ---
 
-# SOIC x StockScans Report Fetcher & Synthesizer (v3.1.0)
+# SOIC x StockScans Report Card Extractor & Track Record Synthesis (v2.1.0)
 
-## Mandatory Execution Rule
-**This skill MUST be executed for every equity analysis task.** 
-Before completing any equity research report or company breakdown, you MUST fetch and synthesize the official **SOIC x StockScans Reports**.
+This skill logs into StockScans.in, extracts all 6 official SOIC report cards, and synthesizes them into Section 23 `### SOIC x StockScans Intelligence & Synthesis` of every equity research report.
+
+---
+
+## Mandatory Section Structure for Section 23 `### SOIC x StockScans Intelligence & Synthesis`
+
+Every equity research report MUST include all 5 sub-pillars inside Section 23:
+
+1. **Business Overview Synthesis**: Segmental revenue distribution and franchise rights.
+2. **Growth Catalysts Synthesis**: Operational growth levers and expansion catalysts.
+3. **SOIC Management Guidance Track Record Analysis & Credibility Scorecard Table**:
+   - Compares historical guidance statements made in quarterly calls against actual realization.
+   - Calculates the **SOIC Management Credibility & Track Record Score %** (e.g. 83.3%).
+   - Includes `🔍 Reading Between the Lines & Analytical Takeaways`.
+4. **Forensic Report Synthesis**: Statutory auditor KAMs, database audit trail, and accounting purity.
+5. **Financial Model & Sensitivity Analysis Synthesis**: Key quarterly/annual projections and sensitivity metrics.
 
 ---
 
