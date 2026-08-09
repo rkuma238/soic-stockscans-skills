@@ -1,6 +1,6 @@
 ---
 name: fraud-detection-forensics
-description: "Forensic accounting skill: detects earnings manipulation, 24H quarterly result fraud signals, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, database audit trail non-compliance, unrecognized DTAs, and includes a mandatory Walk The Talk Management Guidance Scorecard."
+description: "Forensic accounting skill: detects earnings manipulation, 24H quarterly result fraud signals, Related Party Transaction (RPT) risks, KMP salary anomalies, KMP/Board resignations, auditor report KAMs, subsidiary guarantees, bad debt write-offs, exceptional one-off items, unclaimed liabilities, database audit trail non-compliance, unrecognized DTAs, delayed subsidiary impairments, and includes a mandatory Walk The Talk Management Guidance Scorecard."
 type: ATOMIC
 version: 3.5.0
 children: []
