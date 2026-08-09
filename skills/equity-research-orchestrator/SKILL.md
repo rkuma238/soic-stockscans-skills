@@ -1,8 +1,8 @@
 ---
 name: equity-research-orchestrator
-description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate) and routes to the correct analysis pipeline, then synthesizes to a full RA report with investment rating."
+description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), and synthesizes a full RA report with investment rating."
 type: COMPOSITE
-version: 3.0.0
+version: 3.1.0
 children:
   - soic-stockscans-fetcher
   - financial-data-fetcher
@@ -25,15 +25,34 @@ outputs:
   - risk_rating: string
 ---
 
-# Equity Research Master Orchestrator (COMPOSITE)
+# Equity Research Master Orchestrator (COMPOSITE v3.1.0)
 
 Master composite skill for listed company equity analysis across ALL DOMAINS (`corporate`, `bank`, `nbfc`). Dispatches the correct pipeline based on `company-type-classifier` output, then synthesizes the full institutional RA report.
+
+---
+
+## 🔄 MANDATORY ITERATIVE RESEARCH LOOP (MINIMUM 3 PASSES)
+
+Every execution of `equity-research-orchestrator` MUST perform an **Iterative Refinement Loop (Minimum 3 Passes)**:
+
+1. **Pass 1 (Primary Data Extraction & Initial Draft)**:
+   - Run `soic-stockscans-fetcher` to extract all 6 official StockScans reports (`Business Overview`, `Growth Catalysts`, `Guidance Report`, `Forensic Report`, `Financial Model`, `Deep Dive Report`).
+   - Run `screener` MCP tools to fetch full 12-quarter P&L, 7-year annual financials, Balance Sheet, Cash Flows, and Shareholding.
+   - Run `tradingview` MCP tools to audit 30-40 day delivery volume & deliverable quantity.
+2. **Pass 2 (Granular Deepening & Reading-Between-The-Lines Expansion Pass)**:
+   - Audit Pass 1 output against all 25 section requirements.
+   - Ensure EVERY SINGLE TABLE contains an explicit `🔍 Reading Between the Lines & Analytical Takeaways` subsection.
+   - Expand all management guidance targets, unit economics, and margin drivers into plain English.
+3. **Pass 3 (Cross-Verification & Convergence Loop Pass)**:
+   - Perform a full cross-verification pass between Screener API, StockScans report cards, and TradingView data.
+   - **Loop Continuation Condition**: If Pass 3 discovers ANY new metric, guidance delta, forensic detail, or table insight that was missing, **CONTINUE THE LOOP (Pass 4, Pass 5, etc.) until a complete pass yields NO NEW ADDITIONS (Complete Convergence)**!
 
 ---
 
 ## Universal Execution & Report Output Standards (ALL SECTORS & DOMAINS)
 
 Every single execution of `equity-research-orchestrator` MUST automatically and repeatably enforce the following 15 report sections across ALL DOMAINS:
+
 
 1. **Investment Summary & Rating Matrix**: CMP, 52W range, Market Cap, P/E, P/B, ROCE/ROE (or ROA/CRAR for Banks), Target Price, Rating.
 2. **Key Investment Scorecard (Mandatory 5-10 Good Points vs 5-10 Bad Points)**:
