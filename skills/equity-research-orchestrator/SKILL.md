@@ -1,8 +1,8 @@
 ---
 name: equity-research-orchestrator
-description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), enforces side-by-side YoY % and QoQ % analysis, mandates granular seasonality tables, and synthesizes a full RA report with investment rating."
+description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), enforces side-by-side YoY % and QoQ % analysis, mandates manufacturing raw material & end-product demand tables, and synthesizes a full RA report with investment rating."
 type: COMPOSITE
-version: 3.3.0
+version: 3.4.0
 children:
   - soic-stockscans-fetcher
   - financial-data-fetcher
@@ -25,7 +25,7 @@ outputs:
   - risk_rating: string
 ---
 
-# Equity Research Master Orchestrator (COMPOSITE v3.3.0)
+# Equity Research Master Orchestrator (COMPOSITE v3.4.0)
 
 Master composite skill for listed company equity analysis across ALL DOMAINS (`corporate`, `bank`, `nbfc`). Dispatches the correct pipeline based on `company-type-classifier` output, then synthesizes the full institutional RA report.
 
@@ -43,10 +43,14 @@ Every execution of `equity-research-orchestrator` MUST perform an **Iterative Re
    - Audit Pass 1 output against all 25 section requirements.
    - Ensure EVERY SINGLE TABLE contains an explicit `🔍 Reading Between the Lines & Analytical Takeaways` subsection.
    - **MANDATORY DUAL-DELTA NARRATIVE RULE**: Ensure all quarterly narratives and Reading Between the Lines subsections explicitly evaluate BOTH **YoY %** AND **QoQ %** deltas side-by-side!
-   - **MANDATORY GRANULAR SEASONALITY TABLE RULE**: Include an explicit Seasonality Breakdown Table in Section 17 detailing Dull Quarter vs Peak Quarter revenue share %, operational drivers, and raw material commodity sensitivity.
+   - **MANDATORY MANUFACTURING RAW MATERIAL & END-PRODUCT DEMAND RULE**: For all manufacturing companies, Section 17 MUST include:
+     1. *Raw Material Supply Chain & Input Cost Table* (% cost share, domestic vs import origin, hedging & backward integration depth).
+     2. *End-Product Downstream Application & Demand Table* (primary end-user industries, CAGR %, global capacity utilization).
+     3. *Macroeconomic & Regulatory Sensitivity Table* (USD/INR forex sensitivity, PLI export schemes, tariff protections).
 3. **Pass 3 (Cross-Verification & Convergence Loop Pass)**:
    - Perform a full cross-verification pass between Screener API, StockScans report cards, and TradingView data.
    - **Loop Continuation Condition**: If Pass 3 discovers ANY new metric, guidance delta, forensic detail, or table insight that was missing, **CONTINUE THE LOOP (Pass 4, Pass 5, etc.) until a complete pass yields NO NEW ADDITIONS (Complete Convergence)**!
+
 
 
 
