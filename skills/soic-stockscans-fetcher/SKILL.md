@@ -1,27 +1,29 @@
 ---
 name: soic-stockscans-fetcher
-description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them including SOIC Management Guidance Track Record Analysis into plain-English equity research insights.
-version: 2.1.0
+description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them including exhaustive 30+ item SOIC Management Guidance Track Record Analysis into plain-English equity research insights.
+version: 2.2.0
 ---
 
-# SOIC x StockScans Report Card Extractor & Track Record Synthesis (v2.1.0)
+# SOIC x StockScans Report Card Extractor & Track Record Synthesis (v2.2.0)
 
-This skill logs into StockScans.in, extracts all 6 official SOIC report cards, and synthesizes them into Section 23 `### SOIC x StockScans Intelligence & Synthesis` of every equity research report.
+This skill logs into StockScans.in, extracts all 6 official SOIC report cards, and synthesizes them into Section 18 / Section 23 `### SOIC x StockScans Intelligence & Synthesis` of every equity research report.
 
 ---
 
-## Mandatory Section Structure for Section 23 `### SOIC x StockScans Intelligence & Synthesis`
+## Mandatory Section Structure for Section 18 / Section 23 `### SOIC x StockScans Intelligence & Synthesis`
 
 Every equity research report MUST include all 5 sub-pillars inside Section 23:
 
 1. **Business Overview Synthesis**: Segmental revenue distribution and franchise rights.
 2. **Growth Catalysts Synthesis**: Operational growth levers and expansion catalysts.
-3. **SOIC Management Guidance Track Record Analysis & Credibility Scorecard Table**:
-   - Compares historical guidance statements made in quarterly calls against actual realization.
-   - Calculates the **SOIC Management Credibility & Track Record Score %** (e.g. 83.3%).
-   - Includes `🔍 Reading Between the Lines & Analytical Takeaways`.
+3. **EXHAUSTIVE 30+ ITEM SOIC Management Guidance Track Record Scorecard Table**:
+   - MUST list EVERY SINGLE historical guidance statement, capex timeline, margin target, and project promise extracted from transcripts (do NOT collapse or truncate into summary bullet points!).
+   - Assign exact execution verdicts: 🟢 **DELIVERED**, 🟢 **DELIVERED (BEAT)**, 🟡 **PENDING**, 🟧 **PARTIAL**, or 🔴 **MISSED**.
+   - Calculate the **SOIC Management Credibility & Track Record Score %** across all items.
+   - Include `🔍 Reading Between the Lines & Analytical Takeaways`.
 4. **Forensic Report Synthesis**: Statutory auditor KAMs, database audit trail, and accounting purity.
 5. **Financial Model & Sensitivity Analysis Synthesis**: Key quarterly/annual projections and sensitivity metrics.
+
 
 ---
 
