@@ -1,8 +1,8 @@
 ---
 name: equity-research-orchestrator
-description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), and synthesizes a full RA report with investment rating."
+description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), enforces side-by-side YoY % and QoQ % analysis, and synthesizes a full RA report with investment rating."
 type: COMPOSITE
-version: 3.1.0
+version: 3.2.0
 children:
   - soic-stockscans-fetcher
   - financial-data-fetcher
@@ -25,7 +25,7 @@ outputs:
   - risk_rating: string
 ---
 
-# Equity Research Master Orchestrator (COMPOSITE v3.1.0)
+# Equity Research Master Orchestrator (COMPOSITE v3.2.0)
 
 Master composite skill for listed company equity analysis across ALL DOMAINS (`corporate`, `bank`, `nbfc`). Dispatches the correct pipeline based on `company-type-classifier` output, then synthesizes the full institutional RA report.
 
@@ -42,10 +42,11 @@ Every execution of `equity-research-orchestrator` MUST perform an **Iterative Re
 2. **Pass 2 (Granular Deepening & Reading-Between-The-Lines Expansion Pass)**:
    - Audit Pass 1 output against all 25 section requirements.
    - Ensure EVERY SINGLE TABLE contains an explicit `🔍 Reading Between the Lines & Analytical Takeaways` subsection.
-   - Expand all management guidance targets, unit economics, and margin drivers into plain English.
+   - **MANDATORY DUAL-DELTA NARRATIVE RULE**: Ensure all quarterly narratives and Reading Between the Lines subsections explicitly evaluate BOTH **YoY %** AND **QoQ %** deltas side-by-side! (e.g. `Revenue ₹536 Cr (+38.7% YoY | -8.1% QoQ)`, `PAT ₹76 Cr (+53.8% YoY | +24.6% QoQ)`).
 3. **Pass 3 (Cross-Verification & Convergence Loop Pass)**:
    - Perform a full cross-verification pass between Screener API, StockScans report cards, and TradingView data.
    - **Loop Continuation Condition**: If Pass 3 discovers ANY new metric, guidance delta, forensic detail, or table insight that was missing, **CONTINUE THE LOOP (Pass 4, Pass 5, etc.) until a complete pass yields NO NEW ADDITIONS (Complete Convergence)**!
+
 
 ---
 

@@ -2,7 +2,7 @@
 name: income-statement-analyzer
 description: "Analyzes P&L metrics: 8-quarter QoQ trend, revenue growth (YoY/QoQ/MoM), volume vs margin growth breakdown, gross/EBITDA/PAT margins, operating leverage, interest coverage, and earnings quality."
 type: ATOMIC
-version: 2.2.0
+version: 2.3.0
 children: []
 inputs:
   - company_data: object
@@ -16,13 +16,24 @@ outputs:
   - segmental_analysis: object
 ---
 
-# Income Statement Analyzer
+# Income Statement Analyzer (v2.3.0)
 
 Performs deep multi-period P&L analysis for corporate companies, evaluating 8-quarter QoQ trends, top-line volume vs margin growth drivers, operating leverage, interest cost escalation, and segmental performance dynamics.
 
 ---
 
+## 🚨 MANDATORY DUAL-DELTA NARRATIVE RULE (YoY % AND QoQ % SIDE-BY-SIDE)
+
+**Every single quarterly financial narrative, table analysis, and "Reading Between the Lines" commentary MUST explicitly evaluate BOTH YoY % AND QoQ % deltas side-by-side.**
+
+* **Mandatory Format**: `Metric: ₹Value (+YoY % | +QoQ %)`
+* **Example**: *"Q1FY27 Revenue reached ₹536 Cr (+38.7% YoY | -8.1% QoQ), Operating Profit reached ₹136 Cr (+42.9% YoY | +20.4% QoQ) with OPM expanding by +600 bps QoQ to 25.4% (vs 19.4% in Q4FY26), driving Net Profit (PAT) to ₹76 Cr (+53.8% YoY | +24.6% QoQ)."*
+* **Prohibition**: NEVER present YoY % alone without its accompanying QoQ % delta (and vice versa).
+
+---
+
 ## Analysis Steps
+
 
 ### 1. 8-Quarter Sequential (QoQ) Financial Audit (MANDATORY)
 Construct a complete 8-Quarter QoQ Financial Table:
