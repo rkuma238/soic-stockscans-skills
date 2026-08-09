@@ -1,10 +1,10 @@
 ---
 name: soic-stockscans-fetcher
 description: MANDATORY step for equity analysis. Automatically logs into StockScans.in, extracts all 6 SOIC x StockScans reports (Business Overview, Growth Catalysts, Guidance Report, Forensic Report, Financial Model, Deep Dive Report) for any stock symbol, and synthesizes them including exhaustive 6-pillar SOIC Intelligence & Guidance Track Record Analysis into plain-English equity research insights.
-version: 2.4.0
+version: 2.5.0
 ---
 
-# SOIC x StockScans Report Card Extractor & Track Record Synthesis (v2.4.0)
+# SOIC x StockScans Report Card Extractor & Track Record Synthesis (v2.5.0)
 
 This skill logs into StockScans.in, extracts all 6 official SOIC report cards, and synthesizes them into Section 23 `### SOIC x StockScans Intelligence & Synthesis` of every equity research report.
 
@@ -17,9 +17,13 @@ Every equity research report MUST format Section 23 into the following 6 explici
 * **23.1 Business Overview & Segment Deep-Dive**: Exhaustive breakdown of core business segments, product portfolios, brand licensing terms, and operational engines.
 * **23.2 Growth Catalysts & Forward Triggers**: Detailed analysis of capacity expansions, capital infusions, margin drivers, and operational tailwinds.
 * **23.3 Management Guidance vs Historical Outcomes Scorecard**: Full dated multi-item table classifying guidance into Delivered, On Track, Pending, Partial, and Missed/Delayed with exact metrics and credibility score.
-* **23.4 Forensic Audit, Accounting Quality & Dr. Vijay Malik Fraud Risk Scorecard**: Full 7-point checklist covering CFO vs Sales, CWIP ratio, Receivables, Other Income dependency, Auditor Qualifications, Promoter Pledging, and RPTs.
+* **23.4 SOIC Forensic Audit & Accounting Quality Scorecard Table**:
+  - MUST format into an **Exhaustive SOIC Forensic Audit Scorecard Table** classifying ALL SOIC forensic findings into Severity (🔴 **MAJOR**, 🟡 **MINOR**, 🟢 **CLEAN**).
+  - Must cover 100% of SOIC forensic findings: Delayed subsidiary impairments, subsidiary loan/guarantee exposures, database audit trail non-compliance, unrecognized DTAs, aggregator receivable concentration, and auditor rotation history.
+  - MUST include dedicated `🔍 Reading Between the Lines & Analytical Takeaways (Forensic Audit)`.
 * **23.5 Financial Model & Unit Economics**: Comprehensive review of revenue drivers, plant-level/store-level vs company-level EBITDA, lease/interest/depreciation impacts, and FCF roadmap.
 * **23.6 Strategic Moats & Operational Risk Audit**: Detailed narrative on competitive moats, pricing power, and operational risk mitigation.
+
 
 
 
