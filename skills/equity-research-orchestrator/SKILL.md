@@ -1,8 +1,8 @@
 ---
 name: equity-research-orchestrator
-description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), enforces side-by-side YoY % and QoQ % analysis, mandates manufacturing raw material & end-product demand tables, and synthesizes a full RA report with investment rating."
+description: "Master COMPOSITE orchestrator for professional equity Research Analyst (RA) diligence. Classifies company type (bank/nbfc/corporate), routes to the correct analysis pipeline, loops minimum 3 times until convergence (no new details added), enforces side-by-side YoY % and QoQ % analysis, mandates manufacturing raw material & end-product demand tables, cleanly separates Dr. Vijay Malik 7-Point Scorecard (Section 12) from SOIC Forensic Audit Report (Section 23.4), and synthesizes a full RA report with investment rating."
 type: COMPOSITE
-version: 3.4.0
+version: 3.7.0
 children:
   - soic-stockscans-fetcher
   - financial-data-fetcher
