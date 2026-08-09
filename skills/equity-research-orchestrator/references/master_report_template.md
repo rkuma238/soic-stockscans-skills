@@ -56,7 +56,7 @@ graph TD
 | **Section 18: Guidance Audit**| `stockscans` (`get_stockscans_guidance_report`)| `guidance-tracker` | Management Guidance Scorecard + `🔍 Reading Between the Lines` |
 | **Section 19: 3-Yr Forecast** | `stockscans` (`get_soic_stockscans_reports`)| `soic-valuation-analyzer` | Forward Projections Grid + `🔍 Reading Between the Lines` |
 | **Section 20: Valuation** | `screener` & `financial-analysis` | `financial-modeler` | DCF Model & Multiples Table + `🔍 Reading Between the Lines` |
-| **Section 23: StockScans** | `stockscans` (`get_soic_stockscans_reports`)| `soic-stockscans-fetcher` | 6 SOIC Report Cards Synthesis |
+| **Section 23.4: Forensic Audit** | `stockscans` (`get_soic_forensic_report`) | `soic-forensic-analyzer` | SOIC Forensic Scorecard Table + `🔍 Reading Between the Lines` |
 
 ---
 
@@ -65,6 +65,10 @@ graph TD
 Under **EVERY SINGLE TABLE** in the entire document, there must be an explicit heading:
 `🔍 Reading Between the Lines & Analytical Takeaways`
 
+### 23.4 SOIC Forensic Audit & Accounting Quality Scorecard Table
+* Must present an **Exhaustive SOIC Forensic Audit Scorecard Table** classifying ALL SOIC forensic report findings into Severity (🔴 **MAJOR**, 🟡 **MINOR**, 🟢 **CLEAN**).
+* Must cover 100% of SOIC forensic findings: Delayed subsidiary impairments, subsidiary loan/guarantee exposures, database audit trail non-compliance, unrecognized DTAs, aggregator receivable concentration, and auditor rotation history.
+* MUST include dedicated `🔍 Reading Between the Lines & Analytical Takeaways (Forensic Audit)`.
 This section must explain:
 1. Non-obvious forensic inferences and hidden balance sheet/P&L insights.
 2. Trend shifts and inflection drivers.
