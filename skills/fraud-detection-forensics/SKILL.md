@@ -153,3 +153,35 @@ Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `soic_de
 - **Sharda Motor Industries Ltd (`SHARDAMOTR`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
 - **Delhivery Ltd (`DELHIVERY`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
 - **Tarsons Products Ltd (`TARSONS`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+
+---
+
+## 🧠 Master Forensic Fraud Checklist: How Financial Manipulation Occurs
+
+### 🔴 PAT-Revenue Divergence & Margin Compression
+- **Gist / Mechanism**: Company inflates top-line sales via low-margin uncollectible orders or aggressive credit terms, while high operating/interest costs destroy net profit.
+- **Mandatory Audit Rule**: `Compare 3-year Revenue YoY % vs PAT YoY %; flag any divergence >15%.`
+
+### 🔴 Inventory Valuation Inflation & Cost Capitalization
+- **Gist / Mechanism**: Management shifts raw material expenses out of P&L into Capital Work-in-Progress (CWIP) or changes inventory valuation methods (e.g. FIFO to Weighted Average) to artificially inflate operating margins.
+- **Mandatory Audit Rule**: `Audit CWIP additions, inventory growth vs sales growth, and inventory accounting policy disclosures.`
+
+### 🔴 Delayed Impairments & Balance Sheet Carrying Value Masking
+- **Gist / Mechanism**: Management avoids writing off loss-making subsidiary investments to protect standalone Net Worth, using aggressive DCF assumptions (low WACC, high terminal growth) until forced by auditors.
+- **Mandatory Audit Rule**: `Track multi-year Key Audit Matter (KAM) warnings; calculate Total Exposure (Equity + Preference + Unsecured Loans + Guarantees) vs Net Worth.`
+
+### 🔴 Software & Database Audit Trail Disruption (Rule 11(g))
+- **Gist / Mechanism**: Disabling database-level audit logs allows direct database editing, manual journal entry manipulation, or POS transaction deletion without leaving an automated audit trail.
+- **Mandatory Audit Rule**: `Verify statutory auditor's Companies Act Rule 11(g) qualification across consecutive annual reports.`
+
+### 🔴 Aggregator & Trade Receivable Concentration Risk
+- **Gist / Mechanism**: Fictitious sales or uncollectible receivables are allowed to accumulate without bad debt provisions, masking core credit loss drag.
+- **Mandatory Audit Rule**: `Audit top 3 customer concentration % in receivables footnote and check allowance for expected credit loss (ECL).`
+
+### 🔴 Unrecognized Deferred Tax Assets (DTA) & Loss Expiration
+- **Gist / Mechanism**: Subsidiaries incur heavy tax losses expiring in 5 years with no reasonable certainty of future taxable profit, forcing management to refuse DTA recognition or write off past DTAs.
+- **Mandatory Audit Rule**: `Audit tax footnote for unbooked DTAs and tax loss expiration schedules.`
+
+### 🔴 Exceptional One-Off Item Abuse & Non-Operating PAT Kickers
+- **Gist / Mechanism**: Management uses non-operating write-backs of trade payables (>3Y old) or asset sale gains to mask operating losses.
+- **Mandatory Audit Rule**: `Separate Operating PAT from Total PAT; subtract exceptional items and write-backs from net profit.`
