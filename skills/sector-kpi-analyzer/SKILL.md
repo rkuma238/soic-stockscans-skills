@@ -74,6 +74,10 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 ---
 
 ---
+
+---
+
+---
 ## 🧠 Dynamically Learned Industry KPIs & Concall Benchmarks
 
 ### Capital Goods, Defense & Precision Engineering
@@ -134,9 +138,13 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 - Companies that maintained customer relationships, invested in capacity, and kept shipping volumes were running on a treadmill growing units sold but seeing realizations collapse due to Chinese dumping and global oversupply.
 - By fully integrating its R&D, manufacturing, and business development teams, Navin acts as an indispensable solution provider, driving process improvements and securing higher volume commitments in its partners’ long-term supply chain roadmaps.
 - While Navin has worked hard to de-risk its supply chain by signing long-term contracts with South African miners, China still controls a massive portion of the world’s fluorspar supply.
+- This improvement created an efficiency paradox : Faster trips and higher utilisation Fewer trucks needed to move the same cargo Better profitability for surviving fleets Suppressed headline CV volumes This is why CV volumes stayed muted even as freight demand improved.
 
 ### Banking, NBFCs & Financial Services
 - The positioning is genuinely unique: Hester is the world’s largest supplier of PPR (Peste des Petits Ruminants) vaccine and is the designated supplier to the WOAH (World Organisation for Animal Health) vaccine bank.
+- What emerged from this crisis was the RBI’s Malegam Committee, which created the regulated NBFC-MFI category, introduced interest rate caps and borrower-level lending limits, and mandated ethical recovery practices; the regulatory foundation that still governs the sector today.
+- Disbursement growth slowed sharply as lenders conserved liquidity.
+- In bust years, credit costs spike to 3–5% of AUM, erasing all margin.
 
 ### General Industrial & Operational KPIs
 - This transformation is anchored in its “3P” framework , which acts as the blueprint for its sustainable business model: Product: Building a diverse, high-value portfolio spanning fluorine-based intermediates, specialty chemicals, inorganic chemicals, and contract research services.
@@ -147,3 +155,10 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 ### Pipes, Fittings & Plastic Products
 - This allows them to capture massive, stable volumes from successful drugs while continuously incubating new clinical pipeline projects for future growth.
 - As the remaining capacity is validated and filled with new pipeline molecules, this plant will deliver massive incremental top-line growth.
+
+### Ceramics, Tiles & Sanitaryware
+- The growth slowed down sharply due to a prolonged inventory correction, weak farmer sentiment, Agri downcycle, volatile commodity prices, & higher interest rates.
+- Better Risk-Reward at the Same Point in the Cycle In early-to-mid recovery: OEMs look optically cheap but earnings are volatile Component makers show steady margin expansion and balance sheet strength This asymmetry makes components the cleaner, lower-risk way to play a CV recovery .
+
+### Aerospace, SpaceTech & Satellite Communications
+- Capex & Growth Orientation Recent capacity additions and modernisation efforts position Jamna for: Higher payload platforms Export opportunities New-age CVs (including buses and EV platforms) Importantly, Jamna’s growth does not require a boom cycle.
