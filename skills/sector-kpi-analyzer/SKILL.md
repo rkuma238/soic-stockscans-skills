@@ -72,6 +72,8 @@ Defines the explicit domain KPIs and operational metrics across 30+ sectors and 
 Return structured `sector_kpis` and `industry_benchmarks` for the evaluated target company.
 
 ---
+
+---
 ## 🧠 Dynamically Learned Industry KPIs & Concall Benchmarks
 
 ### Capital Goods, Defense & Precision Engineering
@@ -130,6 +132,18 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 
 ### Logistics, Shipping & Supply Chain
 - Companies that maintained customer relationships, invested in capacity, and kept shipping volumes were running on a treadmill growing units sold but seeing realizations collapse due to Chinese dumping and global oversupply.
+- By fully integrating its R&D, manufacturing, and business development teams, Navin acts as an indispensable solution provider, driving process improvements and securing higher volume commitments in its partners’ long-term supply chain roadmaps.
+- While Navin has worked hard to de-risk its supply chain by signing long-term contracts with South African miners, China still controls a massive portion of the world’s fluorspar supply.
 
 ### Banking, NBFCs & Financial Services
 - The positioning is genuinely unique: Hester is the world’s largest supplier of PPR (Peste des Petits Ruminants) vaccine and is the designated supplier to the WOAH (World Organisation for Animal Health) vaccine bank.
+
+### General Industrial & Operational KPIs
+- This transformation is anchored in its “3P” framework , which acts as the blueprint for its sustainable business model: Product: Building a diverse, high-value portfolio spanning fluorine-based intermediates, specialty chemicals, inorganic chemicals, and contract research services.
+- R32 (The Current Growth Driver): This is the current star product of the division.
+- Ultimately, the HPP division utilizes massive, continuous-process industrial plants running at optimal capacity to manufacture these gases and salts, selling them in bulk volumes to domestic and international buyers to capture higher realisations and volume growth.
+- If one of these molecules proves to be highly successful and the customer requires massive commercial volumes, the company then transitions its production out of the MPP and builds a massive “dedicated plant” specifically tailored to manufacture that single product.
+
+### Pipes, Fittings & Plastic Products
+- This allows them to capture massive, stable volumes from successful drugs while continuously incubating new clinical pipeline projects for future growth.
+- As the remaining capacity is validated and filled with new pipeline molecules, this plant will deliver massive incremental top-line growth.
