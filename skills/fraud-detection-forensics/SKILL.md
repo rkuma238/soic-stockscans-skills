@@ -133,3 +133,23 @@ Cross-verify **Screener API Data** vs. **BSE/NSE Result Announcements** vs. **Au
 ## Output Schema
 Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `soic_deep_forensic_audit`, `malik_scorecard_breakdown`, `accounting_fraud_audit`, `writeoff_exceptional_audit`, `kmp_resignation_audit`, `auditor_report_audit`, `kmp_remuneration_audit_with_rationale`, `subsidiary_rpt_audit`, and `walk_the_talk_scorecard`.
 
+---
+
+---
+
+## 🧠 Dynamically Learned 24H Result Red Flags & Forensic Patterns
+- **Ind-Swift Laboratories Ltd (`INDSWFTLAB`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Dynamatic Technologies Ltd (`DYNAMATECH`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Nitin Spinners Ltd (`NITINSPIN`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Akums Drugs & Pharmaceuticals Ltd (`AKUMS`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **PC Jeweller Ltd (`PCJEWELLER`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Colab Platforms Ltd (`COLAB`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Onida Electronics Ltd (`ONIDA`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **PNC Infratech Ltd (`PNCINFRA`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **Bosch Ltd (`BOSCHLTD`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **TVS Supply Chain Solutions Ltd (`TVSSCS`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **Rupa & Company Ltd (`RUPA`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **PDS Ltd (`PDSL`)**: 🟡 Operating Leverage / Inventory Valuation: Operating profit growth 2.5x higher than Revenue growth.
+- **Sharda Motor Industries Ltd (`SHARDAMOTR`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **Delhivery Ltd (`DELHIVERY`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.
+- **Tarsons Products Ltd (`TARSONS`)**: 🔴 PAT-Revenue Divergence: High Sales growth with declining/negative PAT.

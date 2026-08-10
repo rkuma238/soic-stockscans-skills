@@ -78,6 +78,8 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 ---
 
 ---
+
+---
 ## 🧠 Dynamically Learned Industry KPIs & Concall Benchmarks
 
 ### Capital Goods, Defense & Precision Engineering
@@ -159,6 +161,22 @@ Return structured `sector_kpis` and `industry_benchmarks` for the evaluated targ
 ### Ceramics, Tiles & Sanitaryware
 - The growth slowed down sharply due to a prolonged inventory correction, weak farmer sentiment, Agri downcycle, volatile commodity prices, & higher interest rates.
 - Better Risk-Reward at the Same Point in the Cycle In early-to-mid recovery: OEMs look optically cheap but earnings are volatile Component makers show steady margin expansion and balance sheet strength This asymmetry makes components the cleaner, lower-risk way to play a CV recovery .
+- Theme 16 - Textiles Revival The Indian textiles sector is showing signs of genuine recovery after two to three years of weak demand and depressed profitability.
+- KPR Mill is a vertically integrated textile company (spinning to garmenting) with industry-leading margins, driven by operational efficiency, backward integration, and a growing garment export business.
 
 ### Aerospace, SpaceTech & Satellite Communications
 - Capex & Growth Orientation Recent capacity additions and modernisation efforts position Jamna for: Higher payload platforms Export opportunities New-age CVs (including buses and EV platforms) Importantly, Jamna’s growth does not require a boom cycle.
+- JSW Steel , Tata Steel and Jindal Steel represent the large-cap steel space, where the investment case is predicated on domestic demand growth (infrastructure, housing, auto), operational efficiency improvements, and capacity utilisation ramp-up.
+- But over the period it can be interesting to watch as players are coming up with new capacities so as they commercialise and volume growth can come back for players in this space.
+
+### Recycling, Metals, Steel & Mining
+- Shyam Metallics and Energy offers margin upside from commissioning of new capacity across pellets, sponge iron, and downstream long products.
+- Companies with captive raw material sources (iron ore, coal, scrap) have structural cost advantages that insulate margins from input cost volatility.
+- As a diversification strategy they are doing big capex and also acquired RMIL to diversify their revenue streams from Lead recycling to other verticals.
+- How an investor should think about this theme: Recycling is transitioning from a cyclical commodity-adjacent business to a structural growth opportunity.
+
+### Footwear & Consumer Products
+- All seven new radio stations turned EBITDA positive within three months of launch, with the company being the sole operator in each city providing strong local pricing power.
+
+### Paints, Coatings & Resins
+- Near term margins can come under pressure here as the Resin prices have shot seeing this middle east crisis.
