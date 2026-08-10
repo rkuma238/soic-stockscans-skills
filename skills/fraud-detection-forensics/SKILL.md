@@ -156,32 +156,81 @@ Return `fraud_risk_score` as `GREEN`, `AMBER`, or `RED`, accompanied by `soic_de
 
 ---
 
-## 🧠 Master Forensic Fraud Checklist: How Financial Manipulation Occurs
+---
+
+## 🧠 Master Forensic Fraud Checklist: Dr. Vijay Malik & SOIC Audit Benchmarks
 
 ### 🔴 PAT-Revenue Divergence & Margin Compression
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Company inflates top-line sales via low-margin uncollectible orders or aggressive credit terms, while high operating/interest costs destroy net profit.
 - **Mandatory Audit Rule**: `Compare 3-year Revenue YoY % vs PAT YoY %; flag any divergence >15%.`
 
 ### 🔴 Inventory Valuation Inflation & Cost Capitalization
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Management shifts raw material expenses out of P&L into Capital Work-in-Progress (CWIP) or changes inventory valuation methods (e.g. FIFO to Weighted Average) to artificially inflate operating margins.
 - **Mandatory Audit Rule**: `Audit CWIP additions, inventory growth vs sales growth, and inventory accounting policy disclosures.`
 
 ### 🔴 Delayed Impairments & Balance Sheet Carrying Value Masking
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Management avoids writing off loss-making subsidiary investments to protect standalone Net Worth, using aggressive DCF assumptions (low WACC, high terminal growth) until forced by auditors.
 - **Mandatory Audit Rule**: `Track multi-year Key Audit Matter (KAM) warnings; calculate Total Exposure (Equity + Preference + Unsecured Loans + Guarantees) vs Net Worth.`
 
 ### 🔴 Software & Database Audit Trail Disruption (Rule 11(g))
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Disabling database-level audit logs allows direct database editing, manual journal entry manipulation, or POS transaction deletion without leaving an automated audit trail.
 - **Mandatory Audit Rule**: `Verify statutory auditor's Companies Act Rule 11(g) qualification across consecutive annual reports.`
 
 ### 🔴 Aggregator & Trade Receivable Concentration Risk
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Fictitious sales or uncollectible receivables are allowed to accumulate without bad debt provisions, masking core credit loss drag.
 - **Mandatory Audit Rule**: `Audit top 3 customer concentration % in receivables footnote and check allowance for expected credit loss (ECL).`
 
 ### 🔴 Unrecognized Deferred Tax Assets (DTA) & Loss Expiration
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Subsidiaries incur heavy tax losses expiring in 5 years with no reasonable certainty of future taxable profit, forcing management to refuse DTA recognition or write off past DTAs.
 - **Mandatory Audit Rule**: `Audit tax footnote for unbooked DTAs and tax loss expiration schedules.`
 
 ### 🔴 Exceptional One-Off Item Abuse & Non-Operating PAT Kickers
+- **Source**: Dr. Vijay Malik Case Studies
 - **Gist / Mechanism**: Management uses non-operating write-backs of trade payables (>3Y old) or asset sale gains to mask operating losses.
 - **Mandatory Audit Rule**: `Separate Operating PAT from Total PAT; subtract exceptional items and write-backs from net profit.`
+
+### 🔴 Preferential Warrant Arbitrage & Share Dilution
+- **Source**: Dr. Vijay Malik Case Studies & SEBI Orders (Varanium Cloud / Promoter Warrants)
+- **Gist / Mechanism**: Promoters issue preferential warrants to themselves when stock prices are depressed. They inflate quarterly earnings or announce hyped news to drive the share price up, then convert the warrants at a fraction of market value, diluting minority shareholders and taking risk-free gains.
+- **Mandatory Audit Rule**: `Audit warrant issuance price vs current market price; verify 25% upfront money received and check share count dilution %.`
+
+### 🔴 Related Party Asset Mispricing & Cash Siphoning
+- **Source**: Dr. Vijay Malik Case Studies (National Peroxide / RPT Asset Mispricing)
+- **Gist / Mechanism**: Management transfers valuable company land, patents, or subsidiaries to promoter-owned private entities at dirt-cheap book value, or forces the public company to buy illiquid promoter real estate at inflated valuations, draining cash out of the public firm.
+- **Mandatory Audit Rule**: `Inspect Related Party Transactions (RPT) footnote for asset purchase/sale valuations; verify independent valuation reports.`
+
+### 🔴 Interest-Free / Low-Interest Inter-Corporate Loans to Promoter Shells
+- **Source**: Dr. Vijay Malik Case Studies (Promoter Money Churning)
+- **Gist / Mechanism**: The public company takes high-interest bank debt (12-14%) and simultaneously extends interest-free or low-interest unsecured loans/advances to promoter private entities or loss-making subsidiaries, effectively transferring public credit to promoters.
+- **Mandatory Audit Rule**: `Compare interest cost paid on borrowings vs interest income received on inter-corporate deposits (ICDs); flag loans >5% of Net Worth.`
+
+### 🔴 Disproportionate Promoter Remuneration & Royalty Extraction
+- **Source**: Dr. Vijay Malik Case Studies (Management Remuneration Audit)
+- **Gist / Mechanism**: Promoters structure executive salaries, commissions, and brand royalty payments to private family trusts to extract 5-10% of gross profits, maintaining high pay checks even during years when Net Profit declines or turns negative.
+- **Mandatory Audit Rule**: `Calculate Total Promoter Remuneration + Royalty as % of Net Profit; flag if remuneration grows while Net Profit drops.`
+
+### 🔴 Capital Expenditure Inflation via CWIP Capitalization
+- **Source**: Dr. Vijay Malik Case Studies (CWIP & Interest Capitalization Shenanigans)
+- **Gist / Mechanism**: Management stalls CWIP capitalization for 3-5 years, parking routine operating expenses, raw material costs, and interest payments into CWIP instead of charging them to P&L, artificially inflating operating profit (EBITDA) and net assets.
+- **Mandatory Audit Rule**: `Audit CWIP as % of Net Fixed Assets (>15% is high risk); verify multi-year CWIP age analysis and capitalized interest outgo.`
+
+### 🔴 Fictitious Sales & DSO Inflation (Receivables Siphoning)
+- **Source**: Dr. Vijay Malik Case Studies (Receivable Days & CFO vs PAT)
+- **Gist / Mechanism**: Management books bogus sales to related party distributors or fictitious customers near quarter-end to meet revenue targets. Because no cash is ever collected, Days Sales Outstanding (DSO) explodes and CFO remains far below PAT.
+- **Mandatory Audit Rule**: `Compare 5-Year Cumulative CFO vs Cumulative PAT (CFO < PAT indicates bogus earnings); check DSO growth rate vs Revenue growth rate.`
+
+### 🔴 Weak Internal Controls & Senior Management Embezzlement
+- **Source**: Dr. Vijay Malik Case Studies (National Peroxide Internal Control Failure)
+- **Gist / Mechanism**: Lack of segregation of duties and missing/disabled POS/accounting database audit trails allow senior executives or promoters to siphon funds via fake vendor invoices and unrecorded cash transactions for nearly a decade.
+- **Mandatory Audit Rule**: `Audit Companies Act Rule 11(g) database audit trail qualification and internal auditor reports on material weaknesses.`
+
+### 🔴 Non-Operating Other Income Inflation
+- **Source**: Dr. Vijay Malik Case Studies (Financial Shenanigans - Other Income)
+- **Gist / Mechanism**: Management uses interest income, asset sale gains, or investment revaluations (accounting for >20% of PBT) to hide declining core operating profits and present a false picture of healthy bottom-line growth.
+- **Mandatory Audit Rule**: `Calculate Other Income as % of Profit Before Tax (PBT); flag any company where Other Income >15% of PBT.`
